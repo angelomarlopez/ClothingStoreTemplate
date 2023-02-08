@@ -1,0 +1,408 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothing Store Template</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header-nav">
+      <h1 class="logo">Logo</h1>
+      <button class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </button>
+    </header>
+    <div class="side-bar">
+      <!-- CLOSE ICON -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="close"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+      <h1 class="logo">Logo</h1>
+      <div class="clothes">
+        <div class="clothing">
+          <h3 class="clothing-type">Shirts</h3>
+        </div>
+        <div class="clothing">
+          <h3 class="clothing-type">Dresses</h3>
+        </div>
+        <div class="clothing current">
+          <h3 class="clothing-type">
+            Jeans
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="current-icon"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </h3>
+          <div class="hidden-content open">
+            <h3 class="content-type current-content">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="current-content-icon"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              Skinny
+            </h3>
+            <h3 class="content-type">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="current-content-icon"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              Relaxed
+            </h3>
+            <h3 class="content-type">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="current-content-icon"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              Bootcut
+            </h3>
+            <h3 class="content-type">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="current-content-icon"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              Straight
+            </h3>
+          </div>
+        </div>
+        <div class="clothing">
+          <h3 class="clothing-type">Jackets</h3>
+        </div>
+        <div class="clothing">
+          <h3 class="clothing-type">Gymwear</h3>
+        </div>
+        <div class="clothing">
+          <h3 class="clothing-type">Blazers</h3>
+        </div>
+        <div class="clothing">
+          <h3 class="clothing-type">Shoes</h3>
+        </div>
+      </div>
+      <div class="side-links">
+        <a href="#contact">Contact</a>
+        <a href="">Newsletter</a>
+        <a href="#subscribe">Subscribe</a>
+      </div>
+    </div>
+    <article class="main">
+      <header class="main-header">
+        <h3 class="header-title">Jeans</h3>
+        <div class="icons">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            />
+          </svg>
+        </div>
+      </header>
+      <div class="intro">
+        <img src="img/model.jpg" alt="intro-img" class="intro-img" />
+        <div class="intro-info">
+          <p class="info-title">New arrivals</p>
+          <p class="info-subtitle">Collection 2016</p>
+          <button class="info-btn">Shop Now</button>
+        </div>
+      </div>
+      <!-- PRODUCT ITEMS -->
+      <div class="products">
+        <p class="product-count">8 items</p>
+        <div class="product-grid">
+          <div class="product">
+            <img src="img/product/jeans1.jpg" alt="" class="product-img" />
+            <p class="product-name">Ripped Skinny Jeans</p>
+            <p class="product-price">$24.99</p>
+          </div>
+          <div class="product new">
+            <img src="img/product/jeans2.jpg" alt="" class="product-img" />
+            <p class="product-name">Mega Ripped Jeans</p>
+            <p class="product-price">$19.99</p>
+            <button class="buy-now">
+              Buy now
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="buy-icon"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="product">
+            <img src="img/product/jeans3.jpg" alt="" class="product-img" />
+            <p class="product-name">Washed Skinny Jeans</p>
+            <p class="product-price">$20.50</p>
+          </div>
+          <div class="product">
+            <img src="img/product/jeans4.jpg" alt="" class="product-img" />
+            <p class="product-name">Vintage Skinny Jeans</p>
+            <p class="product-price">$14.99</p>
+          </div>
+          <div class="product">
+            <img src="img/product/jeans5.jpg" alt="" class="product-img" />
+            <p class="product-name">Mega Ripped Jeans</p>
+            <p class="product-price">$19.99</p>
+          </div>
+          <div class="product">
+            <img src="img/product/jeans6.jpg" alt="" class="product-img" />
+            <p class="product-name">Washed Skinny Jeans</p>
+            <p class="product-price">$20.50</p>
+          </div>
+          <div class="product sale">
+            <img src="img/product/jeans7.jpg" alt="" class="product-img" />
+            <p class="product-name">Vintage Skinny Jeans</p>
+            <p class="product-price">$14.99</p>
+            <button class="buy-now">
+              Buy now
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="buy-icon"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="product">
+            <img src="img/product/jeans8.jpg" alt="" class="product-img" />
+            <p class="product-name">Ripped Skinny Jeans</p>
+            <p class="product-price">$24.99</p>
+          </div>
+        </div>
+      </div>
+      <!-- SUBSCRIBE SECTION -->
+      <div id="subscribe" class="subscribe">
+        <h1 class="subscribe-title">Subscribe</h1>
+        <p class="subscribe-subtitle">
+          To get special offers and VIP treatment
+        </p>
+        <input type="text" placeholder="Enter e-mail" />
+        <button class="subscribe-btn">Subscribe</button>
+      </div>
+      <!-- CONTACT SECTION -->
+      <div id="contact" class="contact">
+        <form class="contact-form">
+          <h3>Contact</h3>
+          <p>Questions? Go ahead.</p>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="text" placeholder="Subject" />
+          <input type="text" placeholder="Message" />
+          <button type="submit">Send</button>
+        </form>
+        <div class="contact-links">
+          <h3>About</h3>
+          <a href="">About us</a>
+          <a href="">We're hiring</a>
+          <a href="">Support</a>
+          <a href="">Find store</a>
+          <a href="">Shipment</a>
+          <a href="">Payment</a>
+          <a href="">Gift card</a>
+          <a href="">Return</a>
+          <a href="">Help</a>
+        </div>
+        <div class="contact-info">
+          <h3>Store</h3>
+          <div class="store-info">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon--small"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <p>Company Name</p>
+          </div>
+          <div class="store-info">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon--small"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+              />
+            </svg>
+            <p>0044123123</p>
+          </div>
+          <div class="store-info">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon--small"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+              />
+              <path
+                d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+              />
+            </svg>
+            <p>ex@email.com</p>
+          </div>
+          <h3>We accept</h3>
+          <div class="card-info">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon--small"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
+              />
+            </svg>
+            <p>Amex</p>
+          </div>
+          <div class="card-info">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon--small"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
+              <path
+                fill-rule="evenodd"
+                d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <p>Credit Card</p>
+          </div>
+          <div class="social-links">
+            <img
+              src="img/social-media/facebook.png"
+              alt=""
+              class="social-link"
+            />
+            <img
+              src="img/social-media/instagram.png"
+              alt=""
+              class="social-link"
+            />
+            <img
+              src="img/social-media/myspace.png"
+              alt=""
+              class="social-link"
+            />
+            <img
+              src="img/social-media/twitter.png"
+              alt=""
+              class="social-link"
+            />
+            <img
+              src="img/social-media/linkedin.png"
+              alt=""
+              class="social-link"
+            />
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <h5>
+          Powered by
+          <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a>
+        </h5>
+      </footer>
+    </article>
+    <script src="js/index.js"></script>
+  </body>
+</html>
