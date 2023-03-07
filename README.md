@@ -1,4 +1,4 @@
-# ClothingStoreTemplate
+# Clothing Store Template
 
 ## Description
 This application is designed to be a frontend clone of the w3schools template - Clothing Store Template. This application was created using HTML and CSS.
